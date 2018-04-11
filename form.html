@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+
+<script type = "text/javascript">
+function validateForm() 
+
+{
+if(document.terna.fname.value =="")
+{
+alert("please provide your first name!");
+document.terna.fname.focus();
+return false;
+}
+
+if(document.terna.lname.value=="")
+{
+alert("please provide your Last name!");
+document.terna.lname.focus();
+return false;
+}  
+
+if(document.terna.email.value=="")
+{
+alert("please provide your emailId!");
+document.terna.email.focus();
+return false;
+}
+}
+</script>
+</head>
+
+
+<body BGCOLOR="<image src="C:\Users\Public\Pictures\Sample Pictures 
+\Desert.jpg"
+alt="mountain view"
+style="width:304px;height:228px;">
+
+<h2 style ="background-color:blue;color:yellow">
+<center>REGISTRATION FORM </center></H2>
+<table>
+<form name="terna"
+action="form1.html"method="get"onsubmit="return validateForm();">
+<tr>
+<td>First Name</td>
+<td><input type ="text" name="fname"></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="lname"></td>
+</tr>
+<tr>
+<td>Date Of Birth </td>
+<td><input type ="date" name="date"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gender" value=male>Male<br>     
+<input type="radio" name="gender" value=female>Female<br>  
+</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td><input type="text" name="mobile" ></td>     
+ </tr>
+<tr>
+<td>Address
+<textarea name="message" rows="5" cols="20">
+</textarea>
+</td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type ="text" name="email">
+</td>                                                  
+<td>@&nbsp
+<select>
+<option>gmail.com</option>
+<option>yahoo.com</option>
+<option>hotmail.com</option>
+</select>
+<tr>
+<td>Qualification</td>  
+</tr>
+<tr>
+<td>grade</td>&nbsp&nbsp&nbsp  <td>percent</td>&nbsp&nbsp&nbsp
+<td>year</td>
+</tr>
+<tr>
+<td>10th</td> &nbsp&nbsp&nbsp <td><input type="text" name="10"></td>
+&nbsp&nbsp&nbsp <td><input type="text" name="y10">
+</td>
+</tr>
+<tr>     
+<td>12th</td> &nbsp&nbsp&nbsp <td><input type="text" name="12"></td>
+&nbsp&nbsp&nbsp <td><input type="text" name="y12">
+</td>
+</tr>   
+<tr>
+<td>Course</td>
+<td><input type="radio" name="course" value=Engineering>Engineering<br>
+<input type="radio" name="course" value=MBBS>MBBS<br>
+<input type="radio" name="course" value=BSC>BSC<br>
+<input type="radio" name=course" value=BCom>BCom<br>
+<input type="radio" name="course" value=BA>BA<br>
+<input type="radio" name="course" value=Law>Law<br></td>
+</tr><tr>
+<td><button type ="button" 
+onclick="validateForm()">Submit</button></td>
+<td><button type ="button">Reset</button></td>
+</tr>
+</table>
+</body>
+</html>
+
